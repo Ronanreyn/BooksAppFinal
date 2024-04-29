@@ -1,0 +1,20 @@
+﻿@model Category
+
+<h1>Delete Category</h1>
+<div class="col-md-10">
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <div class="form-group m-4">
+            <label asp-for="Name" class="control-label">Name</label>
+            <input asp-for="Name" diabled class="form-control" />
+        </div>
+        <div class="form-group m-4">
+            <label asp-for="Description" class="control-label">Description</label>
+            <input asp-for="Description" disabled class="form-control" />
+        </div>
+        <div class="form-group m-4">
+            <input type="submit" value="Delete" class="form-control btn btn-danger" />
+        </div>
+
+    </form>
+</div>
